@@ -1,0 +1,239 @@
+<!-- 21961085 이유선 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <title>YOSIGO</title>
+    <style>
+        .bodytext_area{
+            height: 870px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+     <!-- wrap 시작 부분 -->
+     <div id="wrap">
+        <!-- header 시작 부분 -->
+        <header>
+            <!-- header를 감싸는 박스 -->
+            <div class="header_area box_inner clear">
+            <!-- YODIGO 로고 -->
+                <h1><a href="../index.html">YOSIGO</a></h1>
+                <!-- header에 있는 메뉴 박스 -->
+                <div class="header_cont">
+                    <ul class="util clear">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                    </ul>
+                    <!-- 상단 내비게이션 -->
+                    <nav>
+                        <ul class="gnb clear">
+                            <!-- 내비게이션 밑에 서브메뉴 -->
+                            <li>
+                                <a href="#" class="openAll1">작가</a>
+                                <div class="gnb_depth gnb_depth2_1">
+                                    <ul class="submenu_list">
+                                        <li><a href="#">작가정보</a></li>
+                                        <li><a href="#">작가 Q&A</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../work.html" class="openAll2">작품</a>
+                                <div class="gnb_depth gnb_depth2_2">
+                                    <ul class="submenu_list">
+                                        <li><a href="../work.html">PART 01</a></li>
+                                        <li><a href="../work2.html">PART 02</a></li>
+                                        <li><a href="../work3.html">PART 03</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../goods.html" class="openAll3">굿즈</a>
+                                <div class="gnb_depth gnb_depth2_3">
+                                    <ul class="submenu_list">
+                                        <li><a href="../goods.html">FRAME</a></li>
+                                        <li><a href="../goods_art.html">ART PRINT</a></li>
+                                        <li><a href="../goods_stat.html">STATIONERY</a></li>
+                                        <li><a href="../goods_hliving.html"> HOME LIVING</a></li>
+                                    </ul>
+                                </div>
+                            </li> 
+                            <li>
+                                <a href="#" class="openAll4">공간</a>
+                                <div class="gnb_depth gnb_depth2_4">
+                                    <ul class="submenu_list">
+                                        <li><a href="#">전시공간</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>    
+        </header>
+         <!-- header 끝 부분 -->
+
+         <!-- container 시작 -->
+        <div class="container">
+            <div class="location_area member">
+                <div class="box_inner">
+                    <h2 class="tit_page">YOSIGO <span class="in">in</span> Holiday record</h2>
+                    <p class="location">
+                        MYPAGE <span class="path">/</span> 회원가입
+                    </p>
+                    <ul class="page_menu clear">
+                        <li><a href="#" class="on">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 본문 시작 -->
+            <div class="bodytext_area box_inner">
+                <!-- 회원가입 시작 -->
+                <form action="#" class="appForm" method="post">
+                    <fieldset>
+                        <legend>회원가입 입력 양식</legend>
+                        <p class="info_pilsoo pilsoo_item">필수입력</p>
+                        <ul class="app_list">
+                            <!-- 아이디 이메일-->
+                            <li class="clear">
+                                <label for="email_lbl" class="tit_lbl pilsoo_item">아이디(E-MAIL)</label>
+                                <div class="app_content email_area">
+                                    <input type="text" class="w160" id="email_lbl" title="이메일 주소">
+                                    <span class="ico_space">@</span>
+                                    <input type="text" class="w160" title="이메일 제공 업체">
+                                    <div class="select_common">
+                                        <select title="이메일 제공 업체">
+                                            <option value="">직접입력</option>
+                                            <option value="naver">naver.com</option>
+                                            <option value="gmail">gmail.com</option>
+                                            <option value="daum">daum.net</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 비밀번호 -->
+                            <li class="clear">
+                                <label for="pwd_lbl" class="tit_lbl pilsoo_item">비밀번호</label>
+                                <div class="app_content">
+                                    <input type="password" class="w100p" id="pwd_lbl" title="비밀번호를 입력하세요" placeholder="비밀번호를 입력하세요"> 
+                                </div>
+                            </li>
+                            <!-- 비밀번호 확인 -->
+                            <li class="clear">
+                                <label for="pwd2_lbl" class="tit_lbl pilsoo_item">비밀번호확인</label>
+                                <div class="app_content">
+                                    <input type="password" class="w100p" id="pwd2_lbl" title="비밀번호를 확인하세요" placeholder="비밀번호를 확인하세요">
+                                </div>
+                            </li>
+                            <!-- 이름 -->
+                            <li class="clear">
+                                <label for="name_lbl" class="tit_lbl pilsoo_item">이름</label>
+                                <div class="app_content">
+                                    <input type="text" class="w100p" id="name_lbl" title="이름을 입력하세요" placeholder="이름을 입력하세요">
+                                </div>
+                            </li>
+                            <!-- 연락처 -->
+                            <li class="clear">
+                                <label for="phone_lbl" class="tit_lbl pilsoo_item">연락처</label>
+                                <div class="app_content">
+                                    <input type="tel" class="w100p" id="phone_lbl" placeholder="휴대폰 '-' 없이 숫자만 입력하세요">
+                                </div>
+                            </li>
+                            <!-- 성별 -->
+                            <li class="clear">
+                                <span class="tit_lbl">성별</span>
+                                <div class="app_content radio_area">
+                                    <input type="radio" class="css-radio" id="mmm_lbl" name="gender" value="남">
+                                    <label for="mmm_lbl">남자</label>
+                                    <input type="radio" class="css-radio" id="www_lbl" name="gender" value="여">
+                                    <label for="www_lbl">여자</label>
+                                </div>
+                            </li>
+                            <!-- 개인정보 활용동의 -->
+                            <li class="clear">
+                                <span class="tit_lbl">개인정보 활용</span>
+                                <div class="app_content checkbox_area">
+                                    <input type="radio" class="css-checkbox" id="agree_lbl" name="agree">
+                                    <label for="agree_lbl">동의함</label>
+                                    <input type="radio" class="css-checkbox" id="disagree_lbl" name="agree">
+                                    <label for="agree_lbl">동의하지않음</label>
+                                </div>
+                            </li>
+                            <!-- 문의내용 -->
+                            <li class="clear">
+                                <label for="content_lbl" class="tit_lbl">프로필 입력</label>
+                                <div class="appcontent">
+                                    <textarea id="content_lbl" class="w100p" placeholder="나를 소개해주세요!"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="btn_line"><a href="#" class="btn_basecolor">가입완료</a></p>
+                    </fieldset>
+
+                </form>
+                <!-- 회원가입 끝 -->
+            </div>
+             <!-- 본문 끝 -->
+        </div>
+        <!-- container 끝 부분 -->
+
+         <!-- 슬라이드 footer 요소  -->
+         <div class="front"></div>
+         <div class="pusher"></div>
+    
+
+     <!-- footer 시작 -->
+     <footer>
+         <div class="foot_area box_inner">
+             <ul class="foot_list clear">
+                 <li><a href="#">이용약관</a></li>
+                 <li><a href="#">개인정보 처리방침</a></li>
+                 <li><a href="#">대관안내</a></li>
+             </ul>
+             <h2>요시고 YOSIGO</h2>
+             <p class="addr">
+                 (주)미디어앤아트 서울특별시 성동구 아차산로17길 49 A동 지하 1층 111호
+             </p>
+             <span class="gubun">/</span>
+                 <span class="br_line">F.
+                     <span class="space0">02-051-9578</span>
+                 </span>
+                 <span class="gubun">/</span>
+                 <span class="br_line">T.
+                     <span class="space0">010-4288-5790</span>
+                 </span>
+                 <span class="gubun">/</span>
+                 <span class="br_line">E-mail.
+                     <span class="space0">lys0725@kaywon.ac.kr</span>
+                 </span>
+                 <p class="copy box_inner">
+                     COPYRIGHT© 2022 BY LEEYOUSUN ALL RIGHTS RESEVED.
+                 </p>
+                 <ul class="snslink">
+                     <li><a href="#">BLOG</a></li>
+                     <li><a href="#">INSTARGRAM</a></li>
+                 </ul>
+             </div>
+         </div>
+     </footer>
+     <!-- footer 끝 -->
+
+    </div>
+    <!-- wrap 끝 부분 -->
+    <!-- quicklist 시작 -->
+    <div class="quick_area">
+        <p class="to_top">
+            <a href="#">TOP</a>
+        </p>
+    </div>
+    <!-- quicklist 끝 -->
+</body>
+<script type="text/javascript" src="../js/common.js"></script>
+</html>

@@ -1,0 +1,187 @@
+.bodytext_area{
+    height: 870px;
+    background-color: white;
+}
+
+.location_area.member > .box_inner >form{
+    padding-top: 100px;
+}
+.appForm{
+    margin: 40px auto 0;
+}
+.appForm .info_pilsoo{
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(100, 100, 100);
+    font-size: 14px;
+    color: #EC8D49;
+}
+.appForm .pilsoo_item{
+    margin: 0 auto;
+}
+.appForm .pilsoo_item::before{
+    content: "*";
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #EC8D49;
+}
+.appForm .app_list{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.appForm .app_list li{
+    padding: 8px 0;
+}
+.appForm .app_list li .tit_lbl{
+    position: relative;
+    float: left;
+    width: 150px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 42px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.appForm .app_list li .app_content{
+    float: right;
+    width: 770px;
+} 
+.appForm .app_list li .app_content *{
+    vertical-align: top; 
+}
+.appForm .app_list li .app_content.email_area .ico_space{
+    display: inline-block;
+    padding-top: 15px;
+}
+.appForm .app_list li .app_content label{
+    vertical-align: middle;
+}
+.appForm .app_list li .select_common{
+    width: 160px;
+    height: 45px;
+    background-position: 100% 50%;
+    border: 1px solid #ccc
+
+}
+.appForm .app_list li .select_common select{
+    width: 200px;
+    height: 43px;
+}
+.appForm .app_list li .app_content.radio_area{
+    height: 45px;
+    box-sizing: border-box;
+    padding-top: 12px;
+}
+.appForm .app_list li .app_content.checkbox_area{
+    height: 45px;
+    box-sizing: border-box;
+    padding-top: 12px;
+}
+.appForm .app_list li textarea{
+    height: 125px;
+    resize: none;
+    float: right;
+    width: 770px !important;
+}
+.btn_line{
+    padding: 55px 0 200px;
+}
+footer{
+    background-color: #CAD9BF;
+    position: fixed;
+    display: block;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+}
+footer > .foot_area{
+    position: relative;
+    padding-bottom: 40px;
+    height: 200px;
+}
+footer > .foot_area >.behind{
+    position: fixed;
+    display: block;
+    z-index: -1;
+    bottom: 0;
+}
+footer > .foot_area > .foot_list{
+    padding-top: 50px;
+}
+footer > .foot_area > .foot_list li{
+    float: left;
+}
+footer > .foot_area > .foot_list li:first-child::after{
+    content: "|";
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 10px;
+    color: #000;
+    position: relative;
+    top: -2px;
+}
+footer > .foot_area > .foot_list li:nth-child(2)::after{
+    content: "|";
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 10px;
+    color: #000;
+    position: relative;
+    top: -2px;
+}
+footer > .foot_area > .foot_list > li > a{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(7, 7, 7);
+}
+footer > .foot_area > h2{
+    padding-top: 25px;
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+}
+footer > .foot_area > .addr{
+    padding-top: 5px;
+    line-height: 1.4;
+    font-size: 13px;
+    color: rgb(58, 58, 58);
+}
+footer > .foot_area > .addr .space0{
+    letter-spacing: 0;
+}
+
+/* COPYRIGHT css 스타일 */
+footer > .foot_area > .copy{
+    padding-top: 3px;
+    font-size: 13px;
+    color: rgb(58, 58, 58);
+    letter-spacing: 0;
+}
+footer > .foot_area > .snslink{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+footer > .foot_area > .snslink > li{
+    float: left;
+    margin-left: 60px;
+}
+footer > .foot_area > .snslink > li > a{
+    background: url("../images/ico_blog_r.png");
+    display: block;
+    width: 50px;
+    height: 74px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+footer > .foot_area > .snslink > li + li > a{
+    background: url("../images/ico_instargram_r.png") no-repeat;
+}

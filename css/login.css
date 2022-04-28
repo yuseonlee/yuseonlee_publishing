@@ -1,0 +1,203 @@
+.login_wrap{
+    width: 508px;
+    margin: 100px auto 0;
+}
+h1.loginTit{
+    text-align: center;
+}
+h1.loginTit a{
+    display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .white{
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px solid red;
+      width: 100px;
+      height: 300px;
+  }
+  .loginform input {
+    display: block;
+  }
+  .loginform {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 180px auto 1px;
+    padding: 40px 30px 30px;
+    background: #ece3d7;
+    color: white;
+    font-size: 14px;
+    box-shadow: 1px 1px 5px rgba(170, 168, 168, 0.7), -1px -1px 5px rgba(149, 149, 149, 0.7);
+    border-radius: 10px;
+  }
+  .loginform h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .loginform form input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+  }
+  .loginform form input[type="password"] {
+    margin: 15px 0;
+  }
+  .loginform form input::placeholder {
+    color: #2b2e4a;
+  }
+  .loginform form input[type="submit"] {
+    position: relative;
+    margin-bottom: 5px;
+    background: #d4c2ab;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .loginform form input[type="submit"]:hover {
+    background: #ecb086;
+    color: white;
+  }
+  .loginform form label {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .loginform form label .idsave {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .loginform form label .text {
+    cursor: pointer;
+    color: rgb(117, 117, 117);
+    margin-top: 3px;
+  }
+  .loginform form label .idsave-checked {
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    color: #2b2e4a;
+  }
+  .loginform form #checkbox:checked ~ label .idsave-checked {
+    display: block;
+  }
+  .loginform .hidden {
+    display: none;
+  }
+  .loginform .forgot {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .loginform .forgot a:hover {
+    color: #ecb086;
+  }
+.login_list{
+    width: 100%;
+    margin: 20px auto 20px;
+}
+.login_list > li{
+    position: relative;
+    margin-bottom: 4px;
+    height: 54px;
+    box-sizing: border-box;
+    /* padding-left: 50px; */
+    /* border: solid black; */
+    border-radius: 20px;
+}
+.login_list > li > a{
+    display: block;
+    height: 54px;
+    box-sizing: border-box;
+    line-height: 54px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+.login_list > li:last-child{
+    margin-bottom: 0;
+}
+.login_list > li.kakao{
+    background: #f3e129 url("../images/ico_katalk.png") no-repeat 15px 50%;
+    background-size: 45px 45px;
+}
+.login_list > li.kakao > a{
+    color: #202224;
+}
+.login_list > li.naver{
+    background: #00c300 url("../images/ico_naver.png") no-repeat 2px 50%;
+    background-size: 45ppx 45px;
+}
+.btnonoff_line{
+    width: 75%;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.btnonoff_line .btn_onoff{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.switch{
+    /* border: 1px solid black;  */
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    vertical-align: top;
+    appearance: none;
+    cursor: pointer;
+    z-index: 0;
+}
+.switch::before{
+    content: "";
+    position: absolute;
+    /* .switch보다 2px 작게 */
+    width: 33px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    z-index: 1;
+    left: 1px;
+    top: 1px;
+}
+.switch::after{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 19px;
+    height: 19px;
+    left: 1px;
+    top: 1px;
+    box-shadow: 0 2px 5px #999999;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
